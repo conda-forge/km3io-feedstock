@@ -1,5 +1,5 @@
 {% set name = "km3io" %}
-{% set version = "0.27.2" %}
+{% set version = "0.27.3" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/km3io-{{ version }}.tar.gz
-  sha256: 835e86d49a93028ab234559e2eb04b471be28aa7faaa719021a732d599c66683
+  sha256: 701b76e1d8e9b3885132e92b9c62d9a1e62830c6a4603b26050afa47ad3a77e4
 
 build:
   number: 0
