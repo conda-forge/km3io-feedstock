@@ -1,11 +1,11 @@
-About km3io
-===========
+About km3io-feedstock
+=====================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/km3io-feedstock/blob/main/LICENSE.txt)
 
 Home: http://git.km3net.de/km3py/km3io
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/km3io-feedstock/blob/main/LICENSE.txt)
 
 Summary: KM3NeT I/O without ROOT
 
