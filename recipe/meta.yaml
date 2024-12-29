@@ -7,11 +7,11 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/km3io-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/km3io-{{ version }}.tar.gz
   sha256: 770fecd41edf977bfee3a01f37f19464cfd794380295439f0247077d2e313926
 
 build:
-  number: 0
+  number: 1
   noarch: python
   entry_points:
     - KPrintTree=km3io.utils.kprinttree:main
@@ -20,14 +20,14 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python {{ python_min }}
     - setuptools_scm
   run:
     - awkward >=1.0.0rc2
     - awkward0
     - docopt
     - numba >=0.50
-    - python >=3.6
+    - python >={{ python_min }}
     - setuptools-scm
     - uproot >=4.0.0rc5
     - uproot3 >=3.11.1
@@ -40,6 +40,7 @@ test:
     - KPrintTree --help
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: http://git.km3net.de/km3py/km3io
