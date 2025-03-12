@@ -20,24 +20,22 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python >=3.9
     - setuptools_scm
   run:
-    - awkward >=1.0.0rc2
-    - awkward0
+    - awkward >=2
     - docopt
     - numba >=0.50
-    - python >=3.6
+    - numpy >=2
+    - python >=3.9
     - setuptools-scm
-    - uproot >=4.0.0rc5
-    - uproot3 >=3.11.1
+    - uproot >=5
 
 test:
   imports:
     - km3io
   commands:
     - pip check
-    - KPrintTree --help
   requires:
     - pip
 
